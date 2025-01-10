@@ -1,0 +1,17 @@
+Total number of Patients: 4,,,,,,Sample PM system,,,,,,Print Date:,06/10/2013,
+Pm system,,,,,,,,,,,,Print User:,"User, Test",
+street address,,,,,,,,,,,,,,
+city and state,,,,,,,,,,,,,,
+Patient Name,,Gender,DOB,Language,Acct#,Race,Ethnicity,Phone#,,Email,,Home Address,,Reminder Method
+,,,,,,,,,,,,,,
+"Patient 1, Test",,M,7/19/2068,English,1,Declined,Declined,(111)123-1234,,sample@example.com,,street address,,cell
+,,,,,,,,,,,,,city and state,
+"Patient 2, Test",,M,2/8/1999,English,2,Declined,Declined,(111)123-1234,,sample@example.com,,RTN MAIL FROM:,,<none>
+,,,,,,,,,,,,street address,,
+,,,,,,,,,,,,city and state,,
+Patient Name,,Gender,DOB,Language,Acct#,Race,Ethnicity,Phone#,,Email,,Home Address,,Reminder Method
+"Patient 3, Test",,M,7/19/2068,English,3,Declined,Declined,(111)123-1234,,sample@example.com,,street address,,home
+,,,,,,,,,,,,,city and state,
+"Patient 4, Test",,M,2/8/1999,English,4,Declined,Declined,(111)123-1234,,sample@example.com,,RTN MAIL FROM:,,work
+,,,,,,,,,,,,street address,,
+,,,,,,,,,,,,city and state,,

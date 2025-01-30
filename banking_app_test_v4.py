@@ -82,9 +82,9 @@ class Account:
         :return: String indicating whether the balance is 'larger', 'smaller', or 'equal'
         """
         if isinstance(other_account, Account):
-            if self.balance > other_account.balance:
+            if self > other_account:
                 return "larger than"
-            elif self.balance < other_account.balance:
+            elif self < other_account:
                 return "smaller than"
             else:
                 return "equal to"
@@ -96,6 +96,39 @@ class Account:
         logging.info(f"Account Holder: {self.user.name}")
         logging.info(f"Account Type: {self.account_type}")
         logging.info(f"Balance: ${self.balance:.2f}")
+
+    def __eq__(self, other):
+        """
+        Equality comparison between two bank accounts based on balance.
+
+        :param other: The other BankAccount object to compare
+        :return: True if balances are equal, False otherwise
+        """
+        if isinstance(other, Account):
+            return self.balance == other.balance
+        return False
+
+    def __gt__(self, other):
+        """
+        Greater than comparison between two bank accounts based on balance.
+
+        :param other: The other BankAccount object to compare
+        :return: True if this account's balance is greater, False otherwise
+        """
+        if isinstance(other, Account):
+            return self.balance > other.balance
+        return False
+
+    def __lt__(self, other):
+        """
+        Less than comparison between two bank accounts based on balance.
+
+        :param other: The other BankAccount object to compare
+        :return: True if this account's balance is less, False otherwise
+        """
+        if isinstance(other, Account):
+            return self.balance < other.balance
+        return False
 
 class Bank:
     def __init__(self):
